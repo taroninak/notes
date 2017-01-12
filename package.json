@@ -1,0 +1,38 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "description": "Simple note management system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taronpa/notes.git"
+  },
+  "keywords": [
+    "note",
+    "notes",
+    "share"
+  ],
+  "author": "Taron Petrosyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taronpa/notes/issues"
+  },
+  "homepage": "https://github.com/taronpa/notes#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "common-errors": "^1.0.0",
+    "cookie-parser": "^1.4.3",
+    "coroutinify": "0.0.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "mongoose": "^4.7.5",
+    "mongoose-autopopulate": "^0.5.0",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0"
+  }
+}

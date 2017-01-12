@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <title>Notes Management System</title>
+    <link rel="stylesheet" type="text/css" href="http://yegor256.github.io/tacit/tacit.min.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <body>
+        <div id="users">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                </tr>
+                <tr v-for="user in users">
+                    <td>{{user.name}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                </tr>
+            </table>
+        </div>
+    <script src="/js/models/users.js"></script>
+    </body>
+</html>
