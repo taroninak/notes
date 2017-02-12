@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 class Util {
     static hashPassword (password) {
         let hash = crypto.createHash('md5').update(password || '').digest('hex');

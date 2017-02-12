@@ -40,8 +40,9 @@ class UserService {
     *remove(id) {
         let user = yield User.findOneAndRemove({_id:id});
         if(user && user.groups && user.groups.length)  {
-            groupService.removeByAuthor(user._id);
+            let group = yield groupService.removeByAuthor(user._id);
         }
+        return user;
     }
 }
 
